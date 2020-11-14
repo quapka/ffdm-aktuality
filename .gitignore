@@ -1,0 +1,4 @@
+virtual
+
+*.pyo
+*.pyc
