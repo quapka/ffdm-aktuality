@@ -51,3 +51,4 @@ Tipy účastníků
 - udělat kód čitelnější a přepsat jej pomocí funkcí
 - přidat testy ;-)
 - přidat barvičky do výstup? S barvami je vždycky všechno lepší.
+- zdokumentovat/okomentovat aplikaci
