@@ -4,3 +4,4 @@ virtual
 *.pyc
 
 .mypy_cache/
+.test-app
