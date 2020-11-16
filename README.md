@@ -1,9 +1,9 @@
 # O repozitáři
-V tomto repozitáři je ukázková aplikace pro (Programovací workshop #1)[https://www.ffdm.cz/programovaci-workshop/] v rámci XVI. FFDM.
+V tomto repozitáři je ukázková aplikace pro [Programovací workshop #1](https://www.ffdm.cz/programovaci-workshop/) v rámci XVI. FFDM.
 
 # O aplikaci
 
-Cílem této aplikace je posbírat (angl. scrape) informace z webu FFDM https://www.ffdm.cz o aktuálním programu a zobrazit je uživateli.
+Cílem této aplikace je posbírat (angl. scrape) informace z webu [FFDM](https://www.ffdm.cz) o aktuálním programu a zobrazit je uživateli.
 
 # Spuštění
 Pro spuštění potřebujete mít nainstalovaný Python 3. Dále musíte vytvořit a aktivovat tzv. virtuální prostředí (angl. virtual environment). Konkrétní kroky na Unix platformě:
