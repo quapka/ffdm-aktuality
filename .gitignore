@@ -2,3 +2,5 @@ virtual
 
 *.pyo
 *.pyc
+
+.mypy_cache/
