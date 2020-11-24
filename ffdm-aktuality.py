@@ -2,27 +2,27 @@ import requests
 
 from bs4 import BeautifulSoup
 
-prog_url = "https://www.ffdm.cz/program/"
-ffdm_page = requests.get(prog_url)
 
-page_soup = BeautifulSoup(markup=ffdm_page.content, features='html.parser')
+def get_tags(url, tag):
+    page = requests.get(url)
+    soup = BeautifulSoup(markup=page.content, features='html.parser')
+    return soup.find_all(tag)
 
-for header in page_soup.find_all('h2'):
-    print(header.text)
-    link = header.parent.parent.parent.parent.find('a')
 
-    subpage = requests.get(link["href"])
-    subpage_soup = BeautifulSoup(
-        markup=subpage.content, features="html.parser")
-
-    for item in subpage_soup.find_all("h2"):
-        item_name = item.text
-        item_link = 'link chybi'
-        for _ in range(5):
+def print_page_info(url, format, cont=None, max_iter=5, tag='h2'):
+    for header in get_tags(url, tag):
+        name = header.text
+        link = 'Link chybi'
+        for _ in range(max_iter):
             try:
-                item_link = item.find('a')['href']
+                link = header.find('a')['href']
                 break
             except TypeError:
-                item = item.parent
+                header = header.parent
+        print(format.replace('{name}', name).replace('{link}', link))
+        if (cont):
+            print_page_info(link, cont, max_iter=max_iter, tag=tag)
 
-        print("\t%s ---> %s" % (item_name, item_link))
+
+prog_url = "https://www.ffdm.cz/program/"
+print_page_info(prog_url, '{name}:', cont='\t{name} ---> {link}')

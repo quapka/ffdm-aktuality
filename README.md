@@ -48,7 +48,6 @@ Tipy účastníků
 
 # TODO
 - použít regulární výrazy na najití datumů
-- udělat kód čitelnější a přepsat jej pomocí funkcí
 - přidat testy ;-)
 - přidat barvičky do výstup? S barvami je vždycky všechno lepší.
 - zdokumentovat/okomentovat aplikaci
