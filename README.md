@@ -44,10 +44,3 @@ Další tipy
 	Člověk krve – V kuchyni ---> https://www.ffdm.cz/clovek-krve-v-kuchyni/
 Tipy účastníků
 ```
-
-
-# TODO
-- použít regulární výrazy na najití datumů
-- přidat testy ;-)
-- přidat barvičky do výstup? S barvami je vždycky všechno lepší.
-- zdokumentovat/okomentovat aplikaci
